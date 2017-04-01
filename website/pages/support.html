@@ -1,0 +1,34 @@
+<h3>News</h3>
+<ul style="font-size: 80%">
+    <li>
+        <h4 style="color:red">Special Notice (May 5, 2017)</h4>
+        
+        Due to a serious bug happened at the block# 798358 we had to apply a hardfork (v.0.9.8.0) and rollback the blockchain to height# 798358 (read more about issue at <a href="https://github.com/aeonix/aeon/issues/42" target="_blank">https://github.com/aeonix/aeon/issues/42</a>). To get the coins mined you'll need to download/compile v0.9.8.0 (or later) from <a href="https://github.com/aeonix/aeon/releases">Aeon project Github</a>. Sorry for inconvenience.
+    </li>
+ </ul>
+
+
+<h3>Contact</h3>
+<p>Email pool support at <a id="emailLink" href=""></a></p>
+
+<h3>Chat Room</h3>
+<iframe id="kiwi_irc" style="border:0; width:100%; height:500px;"></iframe>
+
+<script>
+
+    currentPage = {
+        destroy: function(){
+
+        },
+        update: function(){
+
+        }
+    };
+
+    document.getElementById('kiwi_irc').setAttribute('src', 'https://kiwiirc.com/client/' + irc);
+
+    var emailEl = document.getElementById('emailLink');
+    emailEl.setAttribute('href', 'mailto:' + email);
+    emailEl.textContent = email;
+
+</script>
